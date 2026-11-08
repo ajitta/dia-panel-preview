@@ -1,0 +1,28 @@
+{
+  "name": "dia-panel-preview",
+  "owner": {
+    "name": "ajitta"
+  },
+  "metadata": {
+    "description": "Preview marketplace for the dia-panel workflow plugin."
+  },
+  "allowCrossMarketplaceDependenciesOn": [
+    "dialectic-skills"
+  ],
+  "plugins": [
+    {
+      "name": "dia-panel",
+      "source": "./plugins/dia-panel",
+      "description": "Preview, Claude Code only: a workflow that runs the four dia review lenses on one document in parallel and has dia-adjudicate judge their whole reports twice, in two orders.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "dependencies": [
+        {
+          "name": "dia",
+          "marketplace": "dialectic-skills",
+          "version": ">=2.11.0"
+        }
+      ]
+    }
+  ]
+}
